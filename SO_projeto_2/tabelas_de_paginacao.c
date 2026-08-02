@@ -187,7 +187,7 @@ int main()
             verif = -1;
             continue;
         }
-        //se não contém, busca as referencias futuras e registra no auxiliar aux
+        //se não contém, busca as referencias passadas e registra no auxiliar aux
         for(int h = j; h > 0; h--){
             //verifica se a tabela de paginação contém a referencia passada
             for(int p = 0; p < quadros; p++){
@@ -225,7 +225,7 @@ int main()
             }
         }
         
-        //redefinição das variaveis utilizadas
+        //redefinição das variaveis utilizadas pra proxima iteração
         for(int k = 0; k < quadros; k++){
         aux[k] = 0;
         }
